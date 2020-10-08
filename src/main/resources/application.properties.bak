@@ -1,0 +1,11 @@
+spring.application.name=eureka-server
+server.port=8761
+#\u4E0D\u5411\u6CE8\u518C\u4E2D\u5FC3\u6CE8\u518C\u81EA\u5DF1
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+
+#\u7528\u6237\u540D
+spring.security.user.name=user
+#\u5BC6\u7801
+spring.security.user.password=123456
+eureka.client.service-url.defaultZone=http://user:123456@localhost:8761/eureka/

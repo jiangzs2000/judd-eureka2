@@ -1,0 +1,19 @@
+spring:
+   application:
+      name: eureka-server
+   security:
+      user:
+         name: user
+         password: 123456
+server:
+   port: 1111
+eureka:
+   client:
+      register-with-eureka: false
+      fetch-registry: false
+      service-url:
+         defaultZone: http://127.0.0.1:1111/eureka/
+   server:
+      #enable-self-preservation: false
+      # 默认 60000 毫秒
+      eviction-interval-timer-in-ms: 50000
